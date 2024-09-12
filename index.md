@@ -1,4 +1,4 @@
 ---
-title: Welcome to my blog
+My Git Hits: Welcome to my blog
 ---
 
