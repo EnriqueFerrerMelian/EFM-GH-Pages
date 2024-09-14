@@ -1,0 +1,88 @@
+* {box-sizing: border-box;}
+a {
+	text-decoration: none;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 125vh;
+    background-image: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    font-family: sans-serif;
+	margin-top: 80px;
+	padding: 30px;
+}
+main {
+    color:rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 25px 0 black;
+}
+header * {
+    display: inline;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+}
+.gitTitle {margin-left: 40px;}
+.border {border:1px solid black}
+.intro{text-align: center;width: 100%;}
+.hit {
+	background-color: black;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 10px;
+}
+.hitImag {
+	margin: 0;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.hitImag:hover {
+	filter: brightness(65%);
+	transition: 0.2s;
+}
+.hitText {
+	margin: 0;
+	background-color: black;
+	border-radius: 0 0 10px 10px;
+	padding: 5px;
+}
+/*grid*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
