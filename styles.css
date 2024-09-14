@@ -4,6 +4,8 @@ body{
 	height: 125vh;
     background-image: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
     font-family: sans-serif;
 	margin-top: 80px;
 	padding: 30px;
@@ -63,3 +65,15 @@ main {color:rgb(255, 255, 255);font-weight: bold;}
 .intro{text-align: center;width: 100%;margin-bottom: 100px;}
 .row::after {content: "";clear: both;display: table;}
 .space-around {justify-content: space-around;}
+
+/*CV*/
+.cv {background-color: rgba(0, 0, 0, 0.685); padding: 200px;}
+.name-job h1, p { margin: 0;padding: 0;}
+.presentation {margin-top: 15px;}
+.work-experience {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
+.education {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
+.courses {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
+.personal-info {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
+.social-profiles {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
+.social-profiles a {align-items: center; display: flex; margin-bottom: 10px;}
+.social-profiles img {margin-right: 10px;}
