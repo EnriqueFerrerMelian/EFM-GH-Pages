@@ -99,6 +99,7 @@ main {color:rgb(255, 255, 255);font-weight: bold;}
 	.col-1{width: 10%;}
 	header {display: block; height: auto;}
 	.cv {padding: 40px;}
+	.gitTitle {margin-left: 0; text-align: center;}
 }
 @media only screen and (max-width: 768px) {
 	body {margin-top: 120px;height: 150%;}
@@ -107,6 +108,7 @@ main {color:rgb(255, 255, 255);font-weight: bold;}
 	}
 	header {display: block; height: auto;}
 	.cv {padding: 10px;}
+	.gitTitle {margin-left: 0; text-align: center;}
 }
 @media only screen and (max-width: 420) {
 	body {margin-top: 120px;height: 150%;padding: 0;}
@@ -115,4 +117,5 @@ main {color:rgb(255, 255, 255);font-weight: bold;}
 	}
 	header {display: block; height: auto;}
 	.cv {padding: 10px;}
+	.gitTitle {margin-left: 0; text-align: center;}
 }
