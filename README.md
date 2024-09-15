@@ -9,7 +9,7 @@
 
 # GitHub Pages
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+[_Check the webpage here!._](https://enriqueferrermelian.github.io/EFM-GH-Pages/)
 
 </header>
 
@@ -20,26 +20,20 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
 
 ## Finish
 
-_Congratulations friend, you've completed this course!_
+_Congratulations to myself, I've completed this course!_
+![gitcourse](https://github.com/user-attachments/assets/fdb0baf7-c34e-4446-8c36-2dd2cb721a0c)
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
 
-Your blog is now live and has been deployed!
+My blog is now live and has been deployed!
 
-Here's a recap of all the tasks you've accomplished in your repository:
+Here's a recap of all the tasks i've accomplished in your repository:
 
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
+- I enabled GitHub Pages.
+- I selected a theme using the config file. But at the end I created my own css.
 
 ### What's next?
 
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+- Keep working on my GitHub Pages site... 
 
 <footer>
 
