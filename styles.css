@@ -1,35 +1,58 @@
-* {box-sizing: border-box;}
-a {text-decoration: none;color: white;margin: 0;padding: 0;}
-body{
-	height: 125vh;
-    background-image: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-	background-repeat: no-repeat;
-  	background-attachment: fixed;
-    font-family: sans-serif;
-	margin-top: 80px;
-	padding: 30px;
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-ul {list-style-type:none;}
+body a{ text-decoration: none; color: white;}
+ul{list-style:none;}
 
-header {
-    background-color: white;
+.sidebar li {margin: 20px;}
+.sidebar li a {color: rgb(255, 255, 255);text-decoration: none; border: 1px solid black; padding: 5px 14px;border-radius: 5px;}
+.sidebar li a:hover {color: rgb(255, 255, 255);background-color: black;transition: 0.5s;}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    margin-left: 20px;
+    overflow-y: auto;
+    
+}
+
+
+.menu-toggle {
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-	display: flex;
-	align-items: center;
-	box-shadow: 0 0 25px 0 black;
+    top: 20px;
+    left: 5px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    z-index: 1000;
+    cursor: pointer;
 }
-header * {display: inline;}
-header li {margin: 20px;}
-header li a {color: black;text-decoration: none; border: 1px solid black; padding: 5px 14px;border-radius: 5px;}
-header li a:hover {color: rgb(255, 255, 255);background-color: black;transition: 0.5s;}
-main {color:rgb(255, 255, 255);font-weight: bold;}
 
-.border {border:2px solid rgb(8, 180, 31)}
 /*grid*/
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -44,80 +67,47 @@ main {color:rgb(255, 255, 255);font-weight: bold;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 [class*="col-"] {float: left;padding: 15px;}
-.flex {display: flex;}
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: rgb(0, 0, 0);
-	color: white;
-	text-align: center;
-	align-items: center;
-	justify-content: space-evenly;
-}
-.footer img {height: 34px;border-radius: 5px;}
-.logo {align-items: center;}
-.logo img {height: 34px;border-radius: 6px;}
-.footertitle {font-weight: bold; margin: 6px;}
-.gitTitle {margin-left: 40px;}
 .hit {background-color: black;width: 100%; margin: 0;padding: 0;border-radius: 10px;}
 .hitImag {margin: 0;width: 100%;border-radius: 10px 10px 0 0;}
 .hitImag:hover {filter: brightness(65%);transition: 0.2s;}
 .hitText {margin: 0;background-color: black;border-radius: 0 0 10px 10px;padding: 5px;}
-.intro{text-align: center;width: 100%;margin-bottom: 100px;}
 .row::after {content: "";clear: both;display: table;}
 .space-around {justify-content: space-around;}
 
-/*CV*/
-.cv {background-color: rgba(0, 0, 0, 0.685); padding: 200px;}
-.name-job h1, p { margin: 0;padding: 0;}
-.presentation {margin-top: 15px;}
-.work-experience {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
-.education {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
-.courses {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
-.personal-info {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
-.social-profiles {margin-top: 30px; border:1px solid white; border-radius: 5px; padding: 5px;}
-.social-profiles a {align-items: center; display: flex; margin-bottom: 10px;}
-.social-profiles img {margin-right: 10px;}
+@media (max-width: 768px) {
+    .content {
+        margin-top: 20px;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0px;
+        height: 100vh;
+        transform: translateX(-100%);
+        width: 250px;
+    }
+    .sidebar li {margin: 20px;}
+    .sidebar ul a {color: rgb(255, 255, 255);background-color: black;transition: 0.5s;}
+    /* Mostrar la barra lateral cuando tenga la clase visible */
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+    .menu-toggle {
+        display: block;
+    }
 
-/*responsive*/
-@media only screen and (max-width: 915px) {
-	body {margin-top: 120px;height: 150%;}
-	[class*="col-"] {
+    /* Ajustar el contenido para ocupar toda la pantalla */
+    .content {
+        padding: 20px;
+    }
+    [class*="col-"] {
 		width: 100%;
 	}
-	.col-2 {width: 40%;}
-	.col-1{width: 10%;}
-	header {display: block; height: auto;}
-	.cv {padding: 40px;}
 }
-@media only screen and (max-width: 810px) {
-	body {margin-top: 120px;height: 150%;}
-	[class*="col-"] {
-		width: 100%;
-	}
-	.col-2 {width: 40%;}
-	.col-1{width: 10%;}
-	header {display: block; height: auto;}
-	.cv {padding: 40px;}
-	.gitTitle {margin-left: 0; text-align: center;}
-}
-@media only screen and (max-width: 768px) {
-	body {margin-top: 120px;height: 150%;}
-	[class*="col-"] {
-		width: 100%;
-	}
-	header {display: block; height: auto;}
-	.cv {padding: 10px;}
-	.gitTitle {margin-left: 0; text-align: center;}
-}
-@media only screen and (max-width: 420) {
-	body {margin-top: 120px;height: 150%;padding: 0;}
-	[class*="col-"] {
-		width: 100%;
-	}
-	header {display: block; height: auto;}
-	.cv {padding: 10px;}
-	.gitTitle {margin-left: 0; text-align: center;}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }

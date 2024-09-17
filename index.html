@@ -7,71 +7,213 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="col-3 gitTitle">Enrique Ferrer Melián</h1>
-         <nav class="col-9">
-             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-             </ul>
-         </nav>
-     </header>
-     <main>
-         <div class="intro col-12"><h1>Keep it simple. Here some gits.</h1></div>
-		
-		 <div class="row">
-			<div class="col-2">
-				<div class="hit border">
-					<a href="https://github.com/EnriqueFerrerMelian/academic-vue" target="_blank">
-						<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/academic-vue/blob/master/frontend.png?raw=true" alt=""></div>
-						<div class="hitText">Front-end of an app to add or delete students of a database.</div>
-					</a>
+    <div class="container">
+
+        <button class="menu-toggle">☰</button>
+
+        <nav class="sidebar">
+            <h2>Enrique</h2>
+            <ul>
+                <li><a class="menu-link" href="#about-me">About me</a></li>
+                <li><a class="menu-link" href="#experience">Experience</a></li>
+                <li><a class="menu-link" href="#skills">Skills</a></li>
+                <li><a class="menu-link" href="#education">Educación</a></li>
+                <li><a class="menu-link" href="#projects">Projects</a></li>
+                <li><a class="menu-link" href="CV Enrique_a.pdf" download>Descargar CV</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1>Enrique Ferrer Melián</h1>
+                <h2>Java Developer</h2>
+            </header>
+            
+            <section id="about-me">
+                <h2>About me</h2>
+				<p>
+					Recently turned an application developer, I posses solid knowledge in programming and software development. 
+					I enjoy creating efficient and functional applications using languages such as Java, JavaScript, PHP, HTML, Python and CSS. 
+					I have a strong ability to work in teams, solve problems, and quickly adapt to new technologies. 
+					I am looking for an opportunity to apply my knowledge in a professional environment and contribute to the development of innovative solutions. 
+				</p>
+			</section>
+            
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <div class="job-experience">
+					<div class="job-title">
+						<h3>Full Stack Developer at Landing Track</h3>
+						<p>May 2024 - Present</p>
+					</div>
+					<div class="job-desc">
+						<p>Experience developing front-end and back-end web applications using PHP, HTML, CSS and JavaScript.</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-2">
-				<div class="hit">
-					<a href="https://github.com/EnriqueFerrerMelian/Educational-App----Back-end" target="_blank">
-						<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/Educational-App----Back-end/blob/main/backtend.png?raw=true" alt=""></div>
-						<div class="hitText">Back-end an app to add or delete students of a database.</div>
-					</a>
+				<hr>
+				<div class="job-experience">
+					<div class="job-title">
+						<h3>Service Technician at ESI Malta</h3>
+						<p>October 2018 - July 2020</p>
+					</div>
+					<div class="job-desc">
+						<ul>
+							<li>Installation, maintenance and PPM of the following systems:</li>
+							<li>-CCTV Systems. Wiring, camera installation, NVR configuring, commissioning.</li>
+							<li>-Intrusion systems. System configuration, schematics and device installation.</li>
+							<li>-Door access control systems. Configuring, schematics, device installation and commissioning.</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-2">
-				<div class="hit">
-					<a href="https://github.com/EnriqueFerrerMelian/GymGameProject" target="_blank">
-						<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/GymGameProject/blob/master/gameproject.png?raw=true" alt=""></div>
-						<div class="hitText">Little app, based on another app to help me go to the gym. Under construction.</div>
-					</a>
+				<hr>
+				<div class="job-experience">
+					<div class="job-title">
+						<h3>Service Tachnician at AQS LTD</h3>
+						<p>March 2017 - September 2018</p>
+					</div>
+					<div class="job-desc">
+						<ul>
+							<li>Installation, maintenance and PPM of the following systems:</li>
+							<li>-CCTV Systems. Wiring, camera installation, NVR configuring, commissioning.</li>
+							<li>-Home automation systems based on Z-Wave technology.</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="col-1"></div>
-			<div class="col-2">
-				<div class="hit">
-					<a href="https://github.com/EnriqueFerrerMelian/Olimplicacion" target="_blank">
-						<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/Olimplicacion/blob/master/olimpia.png?raw=true" alt=""></div>
-						<div class="hitText">Final project from the course Multiplatform Application Development.</div>
-					</a>
-				</div>
-			</div>
+            </section>
+			<section id="skills">
+				<h1>Skills</h1>
+				<img src="images\automationlogo.png" title="Home Automation" >
+				<img src="images\heidilogo.png" title="HeidiSQL">
+				<img src="images\laragonlogo.png" title="Laragon">
+				<img src="images\z-wavelogo.png" title="Z-Wave">
+				<img src="images\javascriptlogo.png" title="JavaScript">
+				<img src="images\mysqllogo.png" title="MySql">
+				<img src="images\phplogo.png" title="PHP">
+				<img src="images\restapilogo.png" title="Rest API">
+				<img src="images\javalogo.png" title="Java">
+			</section>
 			
-		  </div> 
-     </main>
-	<footer class="footer flex">
-		<div class="logo flex">
-			<img src="https://github.com/EnriqueFerrerMelian/EFM-GH-Pages/blob/main/PGNTLOGO.png?raw=true" alt="">
-			<p class="footertitle">PROGRANAUTA</p>
-		</div>
-		<div>
-			<a href="https://github.com/EnriqueFerrerMelian" target="_blank">
-				<img src="https://github.com/EnriqueFerrerMelian/EFM-GH-Pages/blob/main/ghlogo.png?raw=true" alt="">
-			</a>
-			<a href="https://www.linkedin.com/in/enrique-ferrer-melian-a8b581142/" target="_blank">
-				<img src="https://github.com/EnriqueFerrerMelian/EFM-GH-Pages/blob/main/lknglogo.png?raw=true" alt="">
-			</a>
-		</div>
-	</footer>
+			<section id="education">
+				<h1>Education</h1>
+				<div class="education-experience">
+					<div class="education-title">
+						<h3>Multimedia application development</h3>
+					</div>
+					<p>National classification Level 5 EQF-ME (HNC)</p>
+					<ul>
+						<li>-Configure and operate computer systems, adapting the logical configuration of the system according to the usage needs and established criteria.</li>
+						<li>-Apply techniques and procedures related to security in systems, services and applications, complying with the security plan.</li>
+						<li>-Managing databases, interpreting their logical design and verifying integrity, consistency, data security and accessibility.</li>
+						<li>-Developing environments, adapting their configuration in each case to allow development and application deployment.</li>
+						<li>-Develop cross-platform applications with access to databases using languages, libraries and tools suitable for specifications.</li>
+					</ul>
+				</div>
+				<hr>
+				<div class="education-experience">
+					<div class="education-title">
+						<h3>Elechtronic Maintenance</h3>
+					</div>
+					<p>National classification Level 5 EQF-ME (HNC)</p>
+					<ul>
+						<li>-Configure electronic circuits recognizing their structure in blocks.</li>
+						<li>-Calculate parameters of analog and digital electronic circuits by identifying the values of the input-output and signal conditioning and processing stages.</li>
+						<li>-Verify the operation of analog circuits and micro programmable digital electronics using measurement equipment and analysis and configuration software systems.</li>
+						<li>-Prepare the maintenance budget, comparing the technical and economic aspects to offer the best solution.</li>
+						<li>-Organize and manage interventions for corrective maintenance according to the level of service and optimizing human and material resources.</li>
+					</ul>
+				</div>
+			</section>
+			<section class="courses">
+				<h1>Courses</h1>
+				<ul>
+					<li><p>PRO-WATCH ECOSYSTEM TRAINING, Honeywell</p></li>
+					<li><p>GALAXY BASIC INSTALLATION, Honeywell</p></li>
+					<li><p>COMMUNICATION IN A TECHNICAL ENVIRONMENT WORKSHOP, Innovaxin International</p></li>
+					<li><p>VET PLC PROGRAMMING &amp; AUTOMATION SYSTEMS, Tech Courses Centre</p></li>
+					<li><p>INTRODUCTION TO COMPUTER NETWORKING, ESI Malta</p></li>
+					<li><p>INTRODUCTION TO HVAC SYSTEMS, ESI Malta</p></li>
+					<li><p>ACCESS CONTROL, Tavcom Training</p></li>
+					<li><p>PROGRAMMING BASES</p></li>
+					<li><p>C# PROGRAMMING, VISUAL STUDIO, Euroinnova</p></li>
+				</ul>
+			</section>
+			<section id="projects" class="row"></section>
+				<h1>Projects</h1>
+				<div class="col-2">
+					<div class="hit border">
+						<a href="https://github.com/EnriqueFerrerMelian/academic-vue" target="_blank">
+							<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/academic-vue/blob/master/frontend.png?raw=true" alt=""></div>
+							<div class="hitText">Front-end of an app to add or delete students of a database.</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="hit">
+						<a href="https://github.com/EnriqueFerrerMelian/Educational-App----Back-end" target="_blank">
+							<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/Educational-App----Back-end/blob/main/backtend.png?raw=true" alt=""></div>
+							<div class="hitText">Back-end an app to add or delete students of a database.</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="hit">
+						<a href="https://github.com/EnriqueFerrerMelian/GymGameProject" target="_blank">
+							<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/GymGameProject/blob/master/gameproject.png?raw=true" alt=""></div>
+							<div class="hitText">Little app, based on another app to help me go to the gym. Under construction.</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="hit">
+						<a href="https://github.com/EnriqueFerrerMelian/Olimplicacion" target="_blank">
+							<div><img class="hitImag" src="https://github.com/EnriqueFerrerMelian/Olimplicacion/blob/master/olimpia.png?raw=true" alt=""></div>
+							<div class="hitText">Final project from the course Multiplatform Application Development.</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 Tu Nombre | <a href="mailto:tucorreo@example.com">Contacto</a></p>
+    </footer>
+
+
+    <script>
+	
+		document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+	menuToggle.addEventListener('click', () => {
+			sidebar.classList.toggle('visible');
+			if (sidebar.classList.contains('visible')) {
+				menuToggle.textContent = '✖';
+				menuToggle.style = "color: white; margin-left: 230px;transition: 0.5s;";
+			} else {
+				menuToggle.textContent = '☰';
+				menuToggle.style = "color: black; transition: 1s;";
+			}
+		});
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            console.log('Link clicked!');
+            if (window.innerWidth <= 768) {
+                console.log('Closing sidebar');
+                sidebar.classList.remove('visible');
+                menuToggle.textContent = '☰';
+				menuToggle.style = "color: black; transition: 1s;";
+            }
+        });
+    });
+});
+
+
+    </script>
 </body>
+
 </html>
